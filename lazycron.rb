@@ -5,21 +5,21 @@
 class Lazycron < Formula
   desc "A lazy TUI for managing cron jobs"
   homepage "https://github.com/swalha1999/lazycron"
-  version "0.12.2"
+  version "0.12.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/swalha1999/lazycron/releases/download/v0.12.2/lazycron_0.12.2_darwin_amd64.tar.gz"
-      sha256 "c66bfa5036e79384fbcef8178b978ea1b45920f1b2c67d659fcf8e8e6fd96598"
+      url "https://github.com/swalha1999/lazycron/releases/download/v0.12.3/lazycron_0.12.3_darwin_amd64.tar.gz"
+      sha256 "143f67c60b2b572f5a8dc916bfd41dc5b0430d6f421ed09973dbb36d5119ca14"
 
       define_method(:install) do
         bin.install "lazycron"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/swalha1999/lazycron/releases/download/v0.12.2/lazycron_0.12.2_darwin_arm64.tar.gz"
-      sha256 "da6b10930b1f286d184135c351bf37a63281684bd4b59b8e69b886c02431f85b"
+      url "https://github.com/swalha1999/lazycron/releases/download/v0.12.3/lazycron_0.12.3_darwin_arm64.tar.gz"
+      sha256 "429d28b5f1147460e3d5e06c72f01e93ade462beface6f4f40c8603bf68d4a1e"
 
       define_method(:install) do
         bin.install "lazycron"
@@ -29,15 +29,15 @@ class Lazycron < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/swalha1999/lazycron/releases/download/v0.12.2/lazycron_0.12.2_linux_amd64.tar.gz"
-      sha256 "aa6df90529817c76532908a6753c3860fc522c074b42f28199732faca8a8c8fc"
+      url "https://github.com/swalha1999/lazycron/releases/download/v0.12.3/lazycron_0.12.3_linux_amd64.tar.gz"
+      sha256 "fe33e8a05c33c77919d84292f2d554c72e99d431a1676d46d13a536cfb1880b4"
       define_method(:install) do
         bin.install "lazycron"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/swalha1999/lazycron/releases/download/v0.12.2/lazycron_0.12.2_linux_arm64.tar.gz"
-      sha256 "9b05cdd76709340f0da16fa1b556b2887feecc6f5b0eebbbbd8e2d3a1b0ca806"
+      url "https://github.com/swalha1999/lazycron/releases/download/v0.12.3/lazycron_0.12.3_linux_arm64.tar.gz"
+      sha256 "947088ba78c292dce182820bda98ea67bf9f87b8d55bf14e17adade5e0cef308"
       define_method(:install) do
         bin.install "lazycron"
       end
